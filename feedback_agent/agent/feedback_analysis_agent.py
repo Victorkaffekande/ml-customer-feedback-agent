@@ -6,7 +6,7 @@ from feedback_agent.tools.keyword_extraction_tool import extract_keywords
 
 
 LLM_CONFIG = {
-    "model": "llama3.1:8b",
+    "model": "mistral-small:latest",
     "client_host": "127.0.0.1:11434",
     "api_type": "ollama",
     "num_predict": -1,
