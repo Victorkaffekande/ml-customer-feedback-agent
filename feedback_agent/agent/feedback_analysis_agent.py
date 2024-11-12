@@ -9,16 +9,16 @@ LLM_CONFIG = {
     "model": "mistral-small:latest",
     "client_host": "127.0.0.1:11434",
     "api_type": "ollama",
-    "num_predict": -1,
-    "repeat_penalty": 1.1,
     "seed": 42,
     "stream": False,
-    "temperature": 1,
-    "top_k": 50,
-    "top_p": 0.8,
     "native_tool_calls": False
 }
-
+# useless params?
+#"temperature": 1,
+#"num_predict": -1,
+#"repeat_penalty": 1.1,
+#"top_k": 50,
+#"top_p": 0.8,
 def create_feedback_analysis_agent() -> ConversableAgent:
     # define the agent
     agent = ConversableAgent(
